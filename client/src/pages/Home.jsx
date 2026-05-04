@@ -14,6 +14,7 @@ export default function Home() {
         .then(res => res.json())
         .then(data => setPosts(data));
     }, []);
+    console.log(import.meta.env.VITE_API_URL);
     
 
     const handleDelete = async (id) => {
