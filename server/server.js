@@ -16,4 +16,4 @@ connectDB();
 app.use("/posts", postRoutes);
 app.use('/auth', authRoutes)
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+app.listen(5000 || process.env.port, () => console.log("Server running on port 5000"));
